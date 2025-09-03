@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India Cooking Recipes</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #fff8f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #ff7043;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .search-container {
+            padding: 1rem;
+            text-align: center;
+        }
+
+        input[type="text"] {
+            width: 60%;
+            padding: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .recipe-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        .recipe {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            margin: 1rem;
+            width: 280px;
+            padding: 1rem;
+        }
+
+        .recipe img {
+            width: 100%;
+            border-radius: 6px;
+        }
+
+        .recipe h3 {
+            margin: 0.5rem 0;
+            color: #d84315;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 1rem;
+            background-color: #ffe0b2;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Indian Cooking Recipes</h1>
+        <p>Delicious homemade dishes from across India 🇮🇳</p>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search for a recipe..." onkeyup="searchRecipes()">
+    </div>
+
+    <div class="recipe-list" id="recipeList">
+        <div class="recipe">
+            <img src="https://source.unsplash.com/400x300/?biryani" alt="Chicken Biryani">
+            <h3>Chicken Biryani</h3>
+            <p>Aromatic basmati rice cooked with spiced chicken and herbs.</p>
+        </div>
+        <div class="recipe">
+            <img src="https://source.unsplash.com/400x300/?masala-dosa" alt="Masala Dosa">
+            <h3>Masala Dosa</h3>
+            <p>South Indian crispy dosa with spiced potato filling.</p>
+        </div>
+        <div class="recipe">
+            <img src="https://source.unsplash.com/400x300/?butter-chicken" alt="Butter Chicken">
+            <h3>Butter Chicken</h3>
+            <p>North Indian curry with creamy tomato sauce and tender chicken.</p>
+        </div>
+        <div class="recipe">
+            <img src="https://source.unsplash.com/400x300/?paneer-tikka" alt="Paneer Tikka">
+            <h3>Paneer Tikka</h3>
+            <p>Grilled marinated paneer cubes with spices and veggies.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2025 India Cooking App | Made with ❤️
+    </div>
+
+    <script>
+        function searchRecipes() {
+            let input = document.getElementById('searchInput').value.toLowerCase();
+            let recipes = document.querySelectorAll('.recipe');
+
+            recipes.forEach(recipe => {
+                let title = recipe.querySelector('h3').textContent.toLowerCase();
+                recipe.style.display = title.includes(input) ? 'block' : 'none';
+            });
+        }
+    </script>
+</body>
+  </html>
