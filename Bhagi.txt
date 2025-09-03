@@ -1,0 +1,55 @@
+Included:
+
+Mobile-friendly layout (responsive with flex)
+
+Search bar to filter recipes live
+
+Images via Unsplash (auto-generated, no hosting required)
+
+Basic styling using embedded CSS
+
+Easy to extend with more recipes, languages, or categories
+
+
+
+---
+
+🌍 How to Make it Accessible in India:
+
+1. Host the file on a public web server:
+
+Use GitHub Pages, Netlify, or Vercel for free.
+
+You can also use Firebase Hosting or any Indian hosting provider.
+
+
+
+2. Custom domain (optional):
+
+Buy a .in domain and link it to your hosted page.
+
+
+
+3. Make multilingual (optional):
+
+Use Google Translate or i18n libraries to support Hindi, Tamil, Bengali, etc.
+
+
+
+
+
+---
+
+➕ Want More Features?
+
+Let me know if you want to:
+
+Add a backend (like Node.js or Firebase)
+
+Enable user uploads or login
+
+Add categories, video recipes, or shopping lists
+
+
+Would you like me to convert this into a downloadable .zip or add more functionality?
+
